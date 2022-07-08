@@ -486,9 +486,9 @@ var geoJson = {"type":"FeatureCollection","features":[{"type":"Feature","geometr
 //   };
 
 L.geoJSON(geoJson,{
-        style: function (feature) {
-            // return {color: feature.properties.marker-color};
-        }
+    onEachFeature: function (feature, layer) {
+        layer.bindPopup(feature.properties.name);
+      }
 }).addTo(map);
 
 
