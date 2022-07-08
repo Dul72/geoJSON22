@@ -13,9 +13,15 @@
     right: 0;
 }
 
+#overflowTest {
+    height: 150px;
+    overflow-x: hidden;
+    overflow: auto;
+    overflow: scroll;
+  }
+
 @media(min-width:576px){
     #map{
-        /* border: 1px solid white; */
         outline-style: solid;
         outline-color: white;
         outline-width: 20px;
@@ -31,7 +37,6 @@
 }
 @media (min-width:768px){
     #map{
-        /* border: 1px solid white; */
         outline-style: solid;
         outline-color: white;
         outline-width: 20px;
@@ -44,6 +49,10 @@
         left: 0;
         right: 0;
     }
+    #overflowTest {
+        height: 300px;
+        overflow: scroll;
+      }
 }
 @media (min-width:992px){
    
